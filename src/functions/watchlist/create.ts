@@ -4,7 +4,7 @@ import WatchList from "../../db/models/watchlist";
 import Ajv from 'ajv';
 const ajv = new Ajv({ allErrors: true });
 
-import { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
+import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 import response from '../../utils/response';
 import watchlistSchema from '../../schemas/watchlist.schema';
 

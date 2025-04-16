@@ -14,10 +14,10 @@ describe('src/functions/watchlist/list', () => {
 
     it('should return a 200 status code and the correct response', async () => {
         Watchlist.findAll = jest.fn().mockResolvedValue(watchlists);
-        const event = createMockEvent('GET', `/watchlists`);
+        //const event = createMockEvent('GET', `/watchlists`);
 
         // Invoke the Lambda function directly
-        const response = await handler(event as any);
+        const response = await handler();
         const data = JSON.parse(response as any);
 
         // Assertions

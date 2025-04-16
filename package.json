@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "start": "sls",
-    "dev": "sls offline"
+    "dev": "sls offline",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,9 @@
     "@types/aws-lambda": "^8.10.102",
     "@types/jest": "^29.5.14",
     "@types/node": "^18.7.13",
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
+    "eslint": "^9.24.0",
     "est": "^0.2.1-alpha",
     "pg-hstore": "^2.3.4",
     "prettier": "^2.7.1",

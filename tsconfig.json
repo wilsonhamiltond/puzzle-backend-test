@@ -14,10 +14,13 @@
     "esModuleInterop": true
   },
   "include": [
-    "**/*"
+    "src/**/*", // Adjust to include your source directories
   ],
   "exclude": [
     "node_modules",
-    "**/*.spec.ts"
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    ".serverless/**"
   ]
 }

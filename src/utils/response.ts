@@ -10,7 +10,7 @@ const response = (status: boolean, code: number, object: any = undefined): any =
     return JSON.stringify({
         statusCode: code,
         body: body
-    })
+    }) as any
 }
 
 export default response;
