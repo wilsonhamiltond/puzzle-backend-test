@@ -1,0 +1,24 @@
+watchlist-get:
+  handler: src/functions/watchlist/get.handler
+  events:
+    - http: GET /watchlists/{id}
+
+watchlist-list:
+  handler: src/functions/watchlist/list.handler
+  events:
+    - http: GET /watchlists
+
+watchlist-create:
+  handler: src/functions/watchlist/create.handler
+  events:
+    - http: POST /watchlists
+
+watchlist-update:
+  handler: src/functions/watchlist/update.handler
+  events:
+    - http: PATCH /watchlists/{id}
+
+watchlist-delete:
+  handler: src/functions/watchlist/delete.handler
+  events:
+    - http: DELETE /watchlists/{id}

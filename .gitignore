@@ -1,0 +1,7 @@
+.serverless
+
+node_modules
+.serverless
+.DS_STORE
+.env
+files

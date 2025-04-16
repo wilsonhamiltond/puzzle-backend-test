@@ -1,0 +1,26 @@
+service: puzzle-backend
+app: puzzle-backend-test
+#org: puzzle
+
+frameworkVersion: "4"
+
+provider:
+  name: aws
+  runtime: nodejs22.x
+  lambdaHashingVersion: 20201221
+
+  stage: dev
+  region: us-east-1
+
+custom:
+  serverless-offline:
+    httpPort: 4000
+    lambdaPort: 4001
+    host: 0.0.0.0
+    apiKey: test-secret-key
+
+plugins:
+  - serverless-offline
+
+functions:
+  - ${file(src/functions/watchlist/function.yml)}
